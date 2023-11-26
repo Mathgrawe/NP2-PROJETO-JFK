@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>JFK</title>
+    <script>
+      const images = ["assets/slide2.jpg", "assets/slide3.jpg"];
+      let currentIndex = 0;
+
+      function changeImage() {
+        const banner = document.querySelector(".banner");
+        banner.src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length;
+      }
+
+      setInterval(changeImage, 3000);
+    </script>
+  </head>
+  <body>
+    <nav id="nav">
+      <div>
+        <h1 class="title">JFK</h1>
+      </div>
+      <div class="links">
+        <a class="links" href="./Home.html">Home</a>
+        <a class="links" href="./Pacote1.html">Pacotes</a>
+        <a class="links" href="">Sobre</a>
+        <a class="links" href="">Contato</a>
+      </div>
+      <div id="log-container">
+        <button class="log">
+          <a href="./Login.html" style="color: black">Login</a>
+        </button>
+        <button class="log">
+          <a href="./Register.html" style="color: black">Register</a>
+        </button>
+      </div>
+    </nav>
+    <div id="carrosel">
+      <img class="banner" src="./assets/slide1.jpg" />
+    </div>
+    <section id="plans">
+      <div class="plan">
+        <div class="image-container">
+          <h1>Coastal Getaway</h1>
+          <img src="./assets/imagem1.jpg" />
+        </div>
+        <button class="details" type="button">
+          <a href="Pacote1.html">Detalhes</a>
+        </button>
+      </div>
+      <div class="plan">
+        <div class="image-container">
+          <h1>Mountain Explorer</h1>
+          <img src="./assets/imagem2.jpg"" />
+        </div>
+        <button class="details" type="button">
+          <a href="Pacote2.html">Detalhes</a>
+        </button>
+      </div>
+      <div class="plan">
+        <div class="image-container">
+          <h1>Urban Escape</h1>
+          <img src="./assets/imagem3.jpg" />
+        </div>
+        <button class="details" type="button">
+          <a href="Pacote3.html">Detalhes</a>
+        </button>
+      </div>
+      <div class="plan">
+        <div class="image-container">
+          <h1>Tropical Paradise Retreat</h1>
+          <img src="./assets/imagem4.jpg" />
+        </div>
+        <button class="details" type="button">
+          <a href="Pacote4.html">Detalhes</a>
+        </button>
+      </div>
+      <div class="plan">
+        <div class="image-container">
+          <h1>Wilderness Adventure</h1>
+          <img src="./assets/imagem5.jpg" />
+        </div>
+        <button class="details" type="button">
+          <a href="Pacote5.html">Detalhes</a>
+        </button>
+      </div>
+      <div class="plan">
+        <div class="image-container">
+          <h1>Cultural Discovery Tour</h1>
+          <img src="./assets/imagem6.jpg" />
+        </div>
+        <button class="details">
+          <a href="Pacote6.html">Detalhes</a>
+        </button>
+      </div>
+    </section>
+    <footer id="footer">
+      <h1 class="title">Rodapé</h1>
+    </footer>
+  </body>
+</html>

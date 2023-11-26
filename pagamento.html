@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div>
+        <h1 class="title">JFK</h1>
+      </div>
+      <div class="links">
+        <a class="links" href="./Home.html">Home</a>
+        <a class="links" href="./Pacote1.html">Pacotes</a>
+        <a class="links" href="">Sobre</a>
+        <a class="links" href="">Contato</a>
+      </div>
+      <div id="log-container">
+        <button class="log">
+          <a href="./Login.html" style="color: black">Login</a>
+        </button>
+        <button class="log">
+          <a href="./Register.html" style="color: black">Register</a>
+        </button>
+      </div>
+    </nav>
+    <div id="payment-layout">
+      <div id="payment">
+        <h3 class="title2">Pagamento</h3>
+        <label>Nome Completo:</label>
+        <input type="text" placeholder="Nome" required />
+        <label>CPF:</label>
+        <input type="text" placeholder="CPF" required />
+        <label>Número do Cartão:</label>
+        <input type="text" placeholder="1234 1234 1234 1234" required />
+        <label>Data de Expiração:</label>
+        <input type="text" placeholder="MM/AA" required />
+        <label>CVV:</label>
+        <input type="text" placeholder="***" required />
+        <label>Parcelas:</label>
+        <select>
+          <option>1x Sem Juros</option>
+          <option>2x Sem Juros</option>
+          <option>3x Sem Juros</option>
+          <option>4x Sem Juros</option>
+          <option>5x Sem Juros</option>
+          <option>6x Sem Juros</option>
+          <option>7x Sem Juros</option>
+          <option>8x Sem Juros</option>
+          <option>9x Sem Juros</option>
+          <option>10x Sem Juros</option>
+        </select>
+        <button class="btnpay" type="submit">
+          <a href="./Finalização.html">Finalizar Pagamento</a>
+        </button>
+      </div>
+      <div id="sumary">
+        <h3 class="title2">Detalhes do Pacote</h3>
+        <p>Pedido N#82347823</p>
+
+        <p>
+          Is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic
+        </p>
+        <p style="font-size: xx-large">Valor: $999</p>
+      </div>
+    </div>
+    <footer id="footer">
+      <h1 class="title">Rodapé</h1>
+    </footer>
+  </body>
+</html>
